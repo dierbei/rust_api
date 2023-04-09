@@ -1,3 +1,5 @@
+extern crate core;
+
 pub mod route;
 pub mod telemetry;
 

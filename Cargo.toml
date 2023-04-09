@@ -8,7 +8,7 @@ authors = ["Hedui <1628652790@qq.com>"]
 
 [[bin]]
 path = "src/main.rs"
-name = "zero2prod"
+name = "rust_api"
 
 [dependencies]
 # web framework

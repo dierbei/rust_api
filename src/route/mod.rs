@@ -1,9 +1,11 @@
 pub mod health_check;
 pub mod history_today;
+pub mod miss_short_video;
 pub mod tiktok_beauty;
 
 pub use health_check::*;
 pub use history_today::*;
+pub use miss_short_video::*;
 use serde::Serialize;
 pub use tiktok_beauty::*;
 

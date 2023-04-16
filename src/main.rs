@@ -1,6 +1,6 @@
 use actix_cors::Cors;
 use actix_web::{web, App, HttpServer};
-use rust_api::route::{health_check, history_today, miss_short_video, tiktok_beauty};
+use rust_api::route::{health_check, history_today, miss_short_video, tiktok_beauty, chat};
 use rust_api::{get_subscriber, init_subscriber};
 use tracing_actix_web::TracingLogger;
 
@@ -23,7 +23,8 @@ async fn main() -> std::io::Result<()> {
                     .service(health_check)
                     .service(tiktok_beauty)
                     .service(history_today)
-                    .service(miss_short_video),
+                    .service(miss_short_video)
+                    .service(chat),
             )
     })
     .bind(("0.0.0.0", 8080))?

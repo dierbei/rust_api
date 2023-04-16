@@ -2,12 +2,14 @@ pub mod health_check;
 pub mod history_today;
 pub mod miss_short_video;
 pub mod tiktok_beauty;
+pub mod chat;
 
 pub use health_check::*;
 pub use history_today::*;
 pub use miss_short_video::*;
-use serde::Serialize;
 pub use tiktok_beauty::*;
+pub use chat::*;
+use serde::Serialize;
 
 #[derive(Serialize, Debug)]
 pub struct ApiResult<T: Serialize> {

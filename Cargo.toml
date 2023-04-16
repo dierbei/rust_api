@@ -34,4 +34,8 @@ tracing-log = "0.1.3"
 # encode
 percent-encoding = "2.1.0"
 
+# 正则
 regex = "1.4.2"
+
+# gpt
+chatgpt_rs = "1.1.3"

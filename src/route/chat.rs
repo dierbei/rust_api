@@ -18,10 +18,8 @@ struct Answer {
 
 #[get("/chat")]
 async fn chat(info: web::Query<Info>) -> impl Responder {
-    // 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
-
     // // Getting the API key here
-    // let key = String::from("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");
+    // let key = String::from("aaa");
     //
     // /// Creating a new ChatGPT client.
     // /// Note that it requires an API key, and uses
